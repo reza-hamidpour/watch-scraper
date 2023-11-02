@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/mnt/61cdfab2-bf16-4b4b-8f41-c7114458948c/Other/My Work/Work/Watchs-scraper/venv/bin/python" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pyppeteer.command import install
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(install())
